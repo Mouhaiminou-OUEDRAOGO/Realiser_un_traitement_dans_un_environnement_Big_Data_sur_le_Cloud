@@ -1,0 +1,14 @@
+Nos periples
+
+1. Difficulé de creation de cluster : --> s'assurer qu'on a les bon roles ^pour demarrer le services. fullacces emr par exemple.
+2.  Emr on ec2, on eks et serveless : emr on ec2.notre machine virtuelle . a choisir le gabari qui êut supporter nos taches
+3. Les workspace :' pas magique. Pourquoi, parce que ça alance dses cluser servlersss dont neous navpons pas créer. 
+	3.1 Pour lancer un sudio, firs add role acces s3 pour mla persisence des fichiers
+	3.2 Eecuer des noebook --->HTTP 403: Forbidden (Authorization Error: User does not have the PassRole permission for the execution role.)
+
+
+Solution : Use only EMR on ec2 c^apbailiy.
++ No direct access o services throw inernet
++ Mais possible par connection ssh. 
++ Attention pairs keys durings cluster creaion shoulb be used for puy congf
+
